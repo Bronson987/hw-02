@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Стилі основної таблиці */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  background-color: #fff;
+}
+
+td {
+  border: 2px solid #000000; /* Чорні жирні рамки як у макеті */
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+/* Комірка з фоновим малюнком */
+.bg-cell {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Текстові кольори для комірок */
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.blue-text {
+  color: blue;
+  font-weight: bold;
+}
+
+/* Центральна область з формою */
+.center-content {
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/* Стиль форми пароля */
+.password-form {
+  background-color: #bfe2ee; /* Блакитний колір рамки форми з макета */
+  border: 1px solid #7cb3c6;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.password-form label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.form-group {
+  display: flex;
+  gap: 5px;
+}
+
+.form-group input[type="password"] {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group input[type="submit"] {
+  background-color: #e1e1e1;
+  border: 1px solid #7a7a7a;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Внутрішня таблиця нижче форми */
+.inner-table {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.inner-table td {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+/* Списки */
+ol {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.square-list {
+  list-style-type: square;
+  text-align: left;
+  padding-left: 20px;
+}
