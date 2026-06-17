@@ -1,0 +1,188 @@
+/* 1. СКИДАННЯ СТАНДАРТНИХ НАЛАШТУВАНЬ БРАУЗЕРА */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #0f172a; /* Той самий фірмовий темно-синій фон з Figma */
+  color: #ffffff; /* Робимо весь текст білим, щоб він читався */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 2. СТИЛІ ДЛЯ ШАПКИ (HEADER) */
+.header {
+  padding: 20px 0;
+  background-color: rgba(15, 23, 42, 0.9); /* Трохи прозора шапка */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Навігація: вирівнюємо посилання в один рядок */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-list a {
+  color: #94a3b8; /* Сіруватий колір для звичайних посилань */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #ffffff; /* При наведенні мишкою текст підсвічується білим */
+}
+
+/* Кнопки в шапці */
+.header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-secondary {
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  color: #ef4444; /* Рожево-червоний акцент при наведенні */
+}
+
+.btn-primary {
+  background-color: #ef4444; /* Рожева кнопка Sign Up */
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #df3333;
+  transform: translateY(-2px); /* Кнопка красиво підстрибує */
+}
+
+/* 3. ГОЛОВНИЙ ЕКРАН (HERO SECTION) */
+.hero {
+  padding: 80px 0 60px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  line-height: 1.2;
+}
+
+.hero-text {
+  color: #94a3b8;
+  font-size: 18px;
+  max-width: 550px;
+  margin: 0 auto 30px auto;
+}
+
+.btn-cta {
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 14px 40px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.btn-cta:hover {
+  background-color: #df3333;
+  box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);
+}
+
+/* Центруємо та красиво обрізаємо дашборд */
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Робимо тінь для картинки */
+}
+
+/* 4. СЕКЦІЯ ПЕРЕВАГ (FEATURES) */
+.features {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Сітка для трьох карток переваг */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 30px;
+  background-color: #1e293b; /* Трохи світліший синій фон для карток */
+  border-radius: 16px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px); /* Картка плавно піднімається при наведенні */
+}
+
+.feature-card img {
+  margin-bottom: 20px;
+  transform: scale(3.5); 
+  display: inline-block;
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #ffffff; 
+}
+
+.feature-card p {
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+/* 5. ПІДВАЛ (FOOTER) */
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+}
+
+.copyright {
+  color: #64748b;
+  font-size: 14px;
+}
