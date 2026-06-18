@@ -8,7 +8,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Стилі основної таблиці */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -17,23 +16,21 @@ table {
 }
 
 td {
-  border: 2px solid #000000; /* Чорні жирні рамки як у макеті */
+  border: 2px solid #000000;
   padding: 15px;
   text-align: center;
   vertical-align: middle;
   font-size: 14px;
 }
 
-/* Комірка з фоновим малюнком */
 .bg-cell {
-  background-image: url('bg.jpg');
+  background-image: url("bg.jpg");
   background-size: cover;
   background-position: center;
   color: #000;
   font-weight: bold;
 }
 
-/* Текстові кольори для комірок */
 .red-text {
   color: red;
   font-weight: bold;
@@ -44,15 +41,13 @@ td {
   font-weight: bold;
 }
 
-/* Центральна область з формою */
 .center-content {
   padding: 10px;
   background-color: #ffffff;
 }
 
-/* Стиль форми пароля */
 .password-form {
-  background-color: #bfe2ee; /* Блакитний колір рамки форми з макета */
+  background-color: #bfe2ee;
   border: 1px solid #7cb3c6;
   padding: 10px;
   margin-bottom: 10px;
@@ -83,7 +78,6 @@ td {
   cursor: pointer;
 }
 
-/* Внутрішня таблиця нижче форми */
 .inner-table {
   width: 100%;
   margin-top: 5px;
@@ -94,7 +88,6 @@ td {
   padding: 5px;
 }
 
-/* Списки */
 ol {
   text-align: left;
   padding-left: 20px;
