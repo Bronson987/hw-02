@@ -1,30 +1,28 @@
-/* 1. СКИДАННЯ СТАНДАРТНИХ НАЛАШТУВАНЬ БРАУЗЕРА */
+/* --- 1. ЗАГАЛЬНІ СТИЛІ ТА СКИДАННЯ --- */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #0f172a;
-  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a; /* Твій фірмовий глибокий темно-синій фон */
+  color: #94a3b8;
   line-height: 1.6;
 }
 
 .container {
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* 2. СТИЛІ ДЛЯ ШАПКИ (HEADER) */
+/* --- 2. ШАПКА САЙТУ (HEADER) --- */
 .header {
   padding: 20px 0;
-  background-color: rgba(15, 23, 42, 0.9);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background-color: #0f172a;
 }
 
 .header .container {
@@ -53,13 +51,13 @@ body {
 .header-actions {
   display: flex;
   gap: 15px;
-  align-items: center;
 }
 
+/* Кнопки */
 .btn {
   display: inline-block;
   padding: 10px 24px;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s;
@@ -74,146 +72,120 @@ body {
 }
 
 .btn-primary {
-  background-color: #ef4444;
+  background-color: #ef4444; /* Фірмовий рожево-червоний колір */
   color: #ffffff;
 }
 
 .btn-primary:hover {
   background-color: #df3333;
-  transform: translateY(-2px);
 }
 
-/* 3. ГОЛОВНИЙ ЕКРАН (HERO SECTION) */
+/* --- 3. ГОЛОВНИЙ БЛОК (HERO) --- */
 .hero {
-  padding: 80px 0 60px 0;
+  padding: 60px 0;
   text-align: center;
 }
 
 .hero-title {
   font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 20px;
   font-weight: 800;
-  max-width: 700px;
-  margin: 0 auto 20px auto;
-  line-height: 1.2;
 }
 
 .hero-text {
-  color: #94a3b8;
   font-size: 18px;
-  max-width: 550px;
-  margin: 0 auto 30px auto;
+  max-width: 600px;
+  margin: 0 auto 30px;
 }
 
 .btn-cta {
   background-color: #ef4444;
   color: #ffffff;
-  padding: 14px 40px;
-  font-size: 16px;
-  border-radius: 8px;
-  margin-bottom: 50px;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 30px;
 }
 
-.btn-cta:hover {
-  background-color: #df3333;
-  box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);
+.hero-image {
+  margin-top: 50px;
 }
 
 .hero-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* 4. СЕКЦІЯ ПЕРЕВАГ (FEATURES) */
+/* --- 4. СЕКЦІЯ ПЕРЕВАГ (FEATURES) --- */
 .features {
   padding: 80px 0;
 }
 
 .section-title {
   font-size: 36px;
+  color: #ffffff;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 
 .features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .feature-card {
+  flex: 1;
+  background-color: #1e293b; /* Картки світліші за загальний фон */
+  padding: 40px 30px;
+  border-radius: 12px;
   text-align: center;
-  padding: 30px;
-  background-color: #1e293b;
-  border-radius: 16px;
-  transition: transform 0.3s;
 }
 
-.feature-card:hover {
-  transform: translateY(-10px);
-}
-
+/* Збільшені та чіткі іконки переваг */
 .feature-card img {
   margin-bottom: 20px;
-  transform: scale(3.5);
-  display: inline-block;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
 .feature-card h3 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  color: #ffffff !important;
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #ffffff; /* Текст заголовків карток тепер чітко білий */
 }
 
-.feature-card p {
-  color: #94a3b8;
-  font-size: 15px;
-}
-
-/* 5. ПІДВАЛ (FOOTER) */
-.footer {
-  padding: 40px 0;
-  border-top: 1px solid #1e293b;
-  text-align: center;
-}
-
-.copyright {
-  color: #64748b;
-  font-size: 14px;
-}
-
-/* 6. СЕКЦІЯ ФОРМИ ПІДПИСКИ */
+/* --- 5. СЕКЦІЯ ФОРМИ ПІДПИСКИ (SUBSCRIBE) --- */
 .subscribe {
-  padding: 60px 0 100px 0;
-  text-align: center;
+  padding: 60px 0;
+  background-color: #0f172a;
 }
 
 .subscribe-box {
-  background-color: #1e293b;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 40px;
+  background-color: #1e293b; /* Виділяємо блок підписки фоном */
+  padding: 50px 40px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .subscribe-title {
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 32px;
   color: #ffffff;
+  margin-bottom: 12px;
 }
 
 .subscribe-text {
+  font-size: 16px;
+  margin-bottom: 30px;
   color: #94a3b8;
-  font-size: 15px;
-  margin-bottom: 25px;
 }
 
 .subscribe-form {
   display: flex;
+  justify-content: center;
   gap: 15px;
   max-width: 500px;
   margin: 0 auto;
@@ -223,6 +195,39 @@ body {
   flex: 1;
 }
 
+.subscribe-form input[type="email"] {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.subscribe-form input[type="email"]:focus {
+  border-color: #ef4444; /* Підсвічування рамки при введенні */
+}
+
+.btn-submit {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 0 30px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #df3333;
+}
+
+/* Сховати label для відповідності семантиці */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -234,44 +239,13 @@ body {
   border: 0;
 }
 
-.subscribe-form input[type="email"] {
-  width: 100%;
-  padding: 12px 20px;
-  background-color: #0f172a;
-  border: 1px solid #334155;
-  border-radius: 8px;
-  color: #ffffff;
-  font-size: 15px;
-  outline: none;
-  transition: border-color 0.3s;
+/* --- 6. ПІДВАЛ (FOOTER) --- */
+.footer {
+  padding: 30px 0;
+  text-align: center;
+  border-top: 1px solid #1e293b;
 }
 
-.subscribe-form input[type="email"]:focus {
-  border-color: #ef4444;
-}
-
-.btn-submit {
-  background-color: #ef4444;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  padding: 0 30px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.btn-submit:hover {
-  background-color: #df3333;
-}
-
-/* На випадок якщо екран маленький (адаптивність форми) */
-@media (max-width: 480px) {
-  .subscribe-form {
-    flex-direction: column;
-  }
-  .btn-submit {
-    padding: 12px 0;
-  }
+.copyright {
+  font-size: 14px;
 }
