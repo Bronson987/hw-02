@@ -1,4 +1,3 @@
-/* --- 1. ЗАГАЛЬНІ СТИЛІ ТА СКИДАННЯ --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #0f172a; /* Твій фірмовий глибокий темно-синій фон */
+  background-color: #0f172a;
   color: #94a3b8;
   line-height: 1.6;
 }
@@ -19,7 +18,6 @@ body {
   padding: 0 20px;
 }
 
-/* --- 2. ШАПКА САЙТУ (HEADER) --- */
 .header {
   padding: 20px 0;
   background-color: #0f172a;
@@ -53,7 +51,6 @@ body {
   gap: 15px;
 }
 
-/* Кнопки */
 .btn {
   display: inline-block;
   padding: 10px 24px;
@@ -72,7 +69,7 @@ body {
 }
 
 .btn-primary {
-  background-color: #ef4444; /* Фірмовий рожево-червоний колір */
+  background-color: #ef4444;
   color: #ffffff;
 }
 
@@ -80,7 +77,6 @@ body {
   background-color: #df3333;
 }
 
-/* --- 3. ГОЛОВНИЙ БЛОК (HERO) --- */
 .hero {
   padding: 60px 0;
   text-align: center;
@@ -116,7 +112,6 @@ body {
   height: auto;
 }
 
-/* --- 4. СЕКЦІЯ ПЕРЕВАГ (FEATURES) --- */
 .features {
   padding: 80px 0;
 }
@@ -136,13 +131,12 @@ body {
 
 .feature-card {
   flex: 1;
-  background-color: #1e293b; /* Картки світліші за загальний фон */
+  background-color: #1e293b;
   padding: 40px 30px;
   border-radius: 12px;
   text-align: center;
 }
 
-/* Збільшені та чіткі іконки переваг */
 .feature-card img {
   margin-bottom: 20px;
   width: 80px;
@@ -153,17 +147,16 @@ body {
 .feature-card h3 {
   font-size: 22px;
   margin-bottom: 12px;
-  color: #ffffff; /* Текст заголовків карток тепер чітко білий */
+  color: #ffffff;
 }
 
-/* --- 5. СЕКЦІЯ ФОРМИ ПІДПИСКИ (SUBSCRIBE) --- */
 .subscribe {
   padding: 60px 0;
   background-color: #0f172a;
 }
 
 .subscribe-box {
-  background-color: #1e293b; /* Виділяємо блок підписки фоном */
+  background-color: #1e293b;
   padding: 50px 40px;
   border-radius: 16px;
   text-align: center;
@@ -208,7 +201,7 @@ body {
 }
 
 .subscribe-form input[type="email"]:focus {
-  border-color: #ef4444; /* Підсвічування рамки при введенні */
+  border-color: #ef4444;
 }
 
 .btn-submit {
@@ -227,7 +220,6 @@ body {
   background-color: #df3333;
 }
 
-/* Сховати label для відповідності семантиці */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -239,7 +231,6 @@ body {
   border: 0;
 }
 
-/* --- 6. ПІДВАЛ (FOOTER) --- */
 .footer {
   padding: 30px 0;
   text-align: center;
